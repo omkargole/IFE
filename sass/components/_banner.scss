@@ -1,0 +1,74 @@
+.banner_section{
+    background-image: url(../images/banner-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: $textColor1;
+    padding-bottom: 267px;
+    padding-top: 135px;
+    h1{
+        text-align: center;
+        font-family: 'poppinslight';
+        line-height: 1.5;
+        word-spacing: 5px;
+        letter-spacing: 3px;
+        padding-bottom: 25px;
+        font-size: 36px;
+    }
+    .services_content{
+        display: flex;
+        justify-content: center;
+        .service{
+            width: 180px;
+            height: 180px;
+            border: 1px solid;
+            text-align: center;
+            padding: 38px 0px;
+            margin: 18px;
+            .service_title{
+                padding-top: 15px;
+                font-family: 'poppinslight';
+            }
+        }
+       
+    }
+    
+}
+@media #{$md-screen}{
+    .banner_section{
+        h1 {
+            font-size: 28px;
+        }
+      }
+  }
+  @media #{$sm-screen}{
+    .banner_section{
+        padding-bottom: 155px;
+        padding-top: 82px;
+        h1{
+            padding: 0px 15px;
+        }
+        .services_content{
+            flex-direction: row;
+            flex-wrap: wrap;
+            .service{
+                width: 100%;
+                height: unset;
+                text-align: left;
+                padding: 0px;
+                align-items: center;
+                display: flex;
+                .service_icon{
+                    float: left;
+                    padding: 10px 20px;
+                }
+                .service_title{
+                    padding: 0px;
+                }
+            }
+        }
+        .container{
+            padding: 0px;
+        }
+    }
+  }

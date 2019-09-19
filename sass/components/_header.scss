@@ -1,0 +1,157 @@
+ 
+.header {
+  background-color: $header_bg;
+  padding: 25px 0px;
+  font-family: 'poppinsregular';
+    .header-menu{
+      .menu-navbar-expand{
+        position: relative;
+        display: flex;
+        align-items: center;
+      } 
+      .navbar-brand{
+        display: inline-block;
+        padding-top: .3125rem;
+        padding-bottom: .3125rem;
+        margin-right: 1rem;
+        font-size: 1.25rem;
+        line-height: inherit;
+        white-space: nowrap;
+      }
+      .menu-toggler{
+        padding: .25rem .75rem;
+        font-size: 1.25rem;
+        line-height: 1;
+        background-color: transparent;
+        border: 1px solid transparent;
+        border-radius: .25rem;
+        cursor: pointer;
+      } 
+      .mobmenu{
+        flex-grow: 1;
+        display: flex;
+        justify-content: flex-end;
+      } 
+      .btn-touch{
+        display: block;
+     }
+      .menu-navbar-nav{
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+          li{
+            display: list-item;
+            text-align: -webkit-match-parent;
+            a{
+              color: $textColor1;
+              padding: 0px 22px;
+              font-size: 18px;
+              text-decoration: none;
+            }
+          }
+          .nav-link {
+            display: block;
+            padding: .5rem 1rem;
+            
+          }
+      } 
+      .icon-massage:before {
+        padding: 0px 7px;
+        font-size: 13px;
+    }
+    .company-btn{
+      margin: 0.0rem 0 .3rem;
+    }
+   
+  }
+}
+@media (min-width: 768px){
+  .header{
+     .header-menu {
+       .menu-toggler {
+        display: none;
+      }
+      .menu-navbar-nav{
+        -ms-flex-direction: row;
+        flex-direction: row;
+      }
+      #closeBtn{
+        display: none
+      }
+      .mobile_massage_icon{
+        display: none;
+      }
+    } 
+  } 
+}
+@media #{$sm-screen}{
+  .header{
+    .header-menu {
+      .mobmenu {
+        position: fixed;
+        transition: all 0.5s ease;
+        width: 50%;
+        height: 100%;
+        background: $header_bg;
+        z-index: 9;
+        top: 0px;
+        display: block;
+        padding: 20px;
+        left: 0%;
+        left: -50%;
+        ul a {
+          border-bottom: 1px solid #D5D5D5;
+       }
+       .btn-touch{
+            display: none;
+       }
+       
+    }
+  .show {
+      position: fixed;
+      transition: all 0.5s ease;
+      width: 50%;
+      height: 100%;
+      background: $header_bg;
+      z-index: 9;
+      top: 0px;
+      display: block;
+      padding: 20px;
+      left: 0%;
+    }
+    #closeBtn{
+      display: block;
+      background: white;
+      float: right;
+      border: transparent;
+      border-radius: 50%;
+    }
+    .navbar-brand {
+      flex: auto; 
+      text-align: center;
+      margin-right: 0px;
+    }
+    .mobile_massage_icon{
+      display: block;
+    }
+    .icon-massage:before{
+      font-size: 20px;
+    }
+    a.icon-massage.mobile_massage_icon {
+      text-decoration: none;
+    }
+  }
+ }
+}
+@media #{$sm-screen}{
+    .header{
+      .header-menu{ 
+        .show {
+          width: 70%;
+        }
+      }
+    }
+}

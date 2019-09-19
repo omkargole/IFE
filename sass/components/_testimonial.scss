@@ -1,0 +1,87 @@
+.testimonial_section{
+    background-color: $textColor3;
+    padding:84px 0px; 
+    h1{
+        text-align: center;
+        color: $textColor5;
+    }
+    .testimonial_content{
+        display: flex;
+        padding-top: 40px;
+        .testimonial_item{
+            flex: 1;
+            margin: 0px 5px;
+            .testimonial_box{
+                background-color: #fff;
+                box-sizing: border-box;
+                padding: 40px;
+                position: relative;
+                border: 1px transparent;
+                border-radius: 25px;
+                box-shadow: 0 1px 7px -3px #777;
+                text-indent: 30px;
+                margin-bottom: 35px;
+                q{
+                    color: $textColor4;
+                }
+                q:before {
+                    position: absolute;
+                    content: "";
+                    top: 34px;
+                    left: 38px;
+                    background: url(../images/Quotes.svg) no-repeat;
+                    width: 24px;
+                    height: 22px;
+                }
+            }
+            .testimonial_box:after {
+                content: ' ';
+                position: absolute;
+                width: 0;
+                height: 0;
+                left: 85px;
+                bottom: -48px;
+                border-left: 27px solid transparent;
+                border-right: 0px solid transparent;
+                border-top: 50px solid white;
+                border-color: transparent transparent #ffffff #ffffff;
+                transform-origin: 0 0;
+                transform: rotate(-62deg);
+                box-shadow: -3px 3px 3px 0 rgba(0, 0, 0, 0.08);
+            }
+
+           
+            .client{
+                display: flex;
+                align-items: center;
+                .client-name{
+                    padding-left: 10px;
+                    h2{
+                        color: $textColor5;
+                    }
+                    p{
+                        color: $textColor4;
+                    }
+                }
+            }
+        }
+    }
+}
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot{
+    display: none;
+}
+@media #{$md-screen}{
+    .testimonial_section{
+        .testimonial_content{
+            .testimonial_item{
+                .testimonial_box{
+                    padding: 25px;
+                    q:before{
+                        top: 20px;
+                        left: 25px;
+                    }
+                }
+            } 
+        } 
+    } 
+}

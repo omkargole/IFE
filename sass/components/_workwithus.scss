@@ -1,0 +1,68 @@
+.work_with_us_section{
+    text-align: center;
+    background-color: $bgColor1;
+    color: $textColor1;
+    padding: 85px 0px;
+    h1{
+        padding-bottom: 20px;
+    }
+    h2{
+        padding-bottom: 20px;
+    }
+    .form_fields{
+        .text-box {
+            padding: 5px;
+            font-size: 14px;
+            margin: 18px 7px;
+            width: 26%;
+            border: 1px solid $borderColor1; 
+        }
+        .textarea-box{
+            width: 81%;
+            font-size: 14px;
+            border: 1px solid $borderColor1; 
+            margin-bottom: 20px;
+        }
+        
+    }
+    .submit-btn{
+        padding: 6px 30px;    
+    }
+
+}
+@media #{$lg-screen}{
+    .work_with_us_section {
+        .form_fields {
+            .textarea-box{
+                width: 82%;
+            }
+        }
+    }
+}
+@media #{$md-screen}{
+    .work_with_us_section {
+        .form_fields {
+            .textarea-box{
+                width: 83%;
+            }
+        }
+    }
+}
+@media #{$sm-screen}{
+    .work_with_us_section {
+        .form_fields {
+            .text-box{
+                width: 100%;
+                margin: 8px 0px 0px 0px;
+            }
+            .textarea-box{
+                width: 100%;
+                margin: 8px 0px 0px 0px;
+            }
+            
+        }
+        .submit-btn{
+            margin-top: 40px;
+        }
+    }
+}

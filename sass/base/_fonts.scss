@@ -1,0 +1,59 @@
+//Vendor
+@import "variables";
+
+@font-face {
+    font-family: 'poppinsbold';
+    src: url( $fontUrl + 'poppins-bold-webfont.woff2') format('woff2'),
+         url('poppins-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'poppinsextrabold';
+    src: url($fontUrl +'poppins-extrabold-webfont.woff2') format('woff2'),
+         url($fontUrl +'poppins-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'poppinsextralight';
+    src: url($fontUrl +'poppins-extralight-webfont.woff2') format('woff2'),
+         url($fontUrl +'poppins-extralight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'poppinslight';
+    src: url($fontUrl +'poppins-light-webfont.woff2') format('woff2'),
+         url($fontUrl +'poppins-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'poppinsmedium';
+    src: url($fontUrl +'poppins-medium-webfont.woff2') format('woff2'),
+         url($fontUrl +'poppins-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'poppinsregular';
+    src: url($fontUrl +'poppins-regular-webfont.woff2') format('woff2'),
+         url($fontUrl +'poppins-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'poppinssemibold';
+    src: url($fontUrl +'poppins-semibold-webfont.woff2') format('woff2'),
+         url($fontUrl +'poppins-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
